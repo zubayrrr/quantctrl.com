@@ -1,0 +1,320 @@
+{{ define "main" }}
+<section
+  class="section pb-3"
+  style="background: url(../images/bbblurry.svg) center / cover no-repeat"
+>
+  <div class="row justify-content-center py-5">
+    <div class="col-lg-8 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-12 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a
+        class="btn btn-primary btn-lg px-4 mb-2"
+        href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button"
+        >Read Docs</a
+      >
+    </div>
+  </div>
+  <!-- <div class="d-flex justify-content-start mb-5">
+    <div class="bg-dots"></div>
+  </div> -->
+</section>
+
+<div class="container">
+  <div class="row mb-4 align-items-center justify-content-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="lc-block text-center">
+        <img
+          class="img-fluid w-50"
+          src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg"
+          srcset=""
+          sizes=""
+          width=""
+          height=""
+        />
+      </div>
+      <!-- /lc-block -->
+    </div>
+    <!-- /col -->
+    <div class="col-lg-6 p-lg-6">
+      <div class="lc-block mb-5">
+        <div editable="rich">
+          <h2 class="display-6 fw-bold">Automate Maintainence Sheduling</h2>
+          <p class="lead">
+            Automating the detection of anomalies and failures in equipment
+            helps us prevent downtime and critical failures. With this, limited
+            resources can be deployed, while extending the lifecycle of devices
+            and equipment, while improving quality and supply chain processes
+            and increasing stakeholder satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /col -->
+  </div>
+  <div class="row mb-4 align-items-center justify-content-center">
+    <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+      <div class="lc-block text-center">
+        <img
+          class="img-fluid w-50"
+          src="https://cdn.livecanvas.com/media/svg/isometric/Startup_SVG.svg"
+          srcset=""
+          sizes=""
+          width=""
+          height=""
+        />
+      </div>
+      <!-- /lc-block -->
+    </div>
+    <!-- /col -->
+    <div class="col-lg-6 p-lg-6">
+      <div class="lc-block mb-5">
+        <div editable="rich">
+          <h2 class="display-6 fw-bold">Custom Built Strategies</h2>
+
+          <p class="lead">
+            The generality of an anomaly detection model is both its biggest
+            advantage and pitfall: the model should be able to flag every type
+            of failure, despite of not having any previous knowledge about them.
+            Anomalous behaviour, however, does not necessarily lead to failure.
+            And if it does, the model does not give information about the time
+            span it should occur. This is why we build custom strategies and
+            frame models around them.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /col -->
+  </div>
+</div>
+
+{{ end }} {{ define "sidebar-prefooter" }} {{ if eq $.Site.Language.LanguageName
+"English" }}
+<!-- <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Security aware</h2>
+          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Fast by default ⚡️</h2>
+          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">SEO-ready</h2>
+          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Full text search</h2>
+          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Page layouts</h2>
+          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Dark mode</h2>
+          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+<section class="section">
+  <div class="container py-5">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-12">
+        <div class="lc-block text-center mb-4">
+          <div editable="rich">
+            <h2 class="fw-bold">The Service Model</h2>
+          </div>
+        </div>
+        <div class="lc-block text-center">
+          <div editable="rich">
+            We're building failure models with a 4 step appraoch.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center g-0">
+      <div class="col-md-5">
+        <img
+          class="img-fluid h-100"
+          src="https://images.unsplash.com/photo-1569437061238-3cf61084f487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080"
+          alt="Photo by Tim Mossholder"
+          style="object-fit: cover"
+          srcset="
+            https://images.unsplash.com/photo-1569437061238-3cf61084f487?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080  1080w,
+            https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150   150w,
+            https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300   300w,
+            https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768   768w,
+            https://images.unsplash.com/photo-1569437061238-3cf61084f487??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8OHx8c3VwcG9ydHxlbnwwfDF8fHwxNjM2MDM1MzE2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w
+          "
+          sizes="(max-width: 1080px) 100vw, 1080px"
+          width="1080"
+          height=""
+        />
+      </div>
+      <div class="col-md-7 p-5 d-flex flex-column justify-content-center">
+        <div class="accordion accordion-flush" id="accordionFlushMyFAQ1">
+          <div class="lc-block accordion-item mb-5">
+            <a
+              editable="inline"
+              class="fw-bold text-decoration-none h4 collapsed"
+              href="#"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Data Lake Infrastructure
+            </a>
+
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushMyFAQ1"
+              style=""
+            >
+              <div class="accordion-body" editable="rich">
+                To build a failure model, we require enough historical data that
+                allows us to capture information about events leading to
+                failure. In addition to that, general static features of the
+                system can also provide valuable information, such as mechanical
+                properties, average usage and operating conditions - all of that
+                historical data is going to be pushed to a data lake and will
+                form the central basin for future analysis.
+              </div>
+            </div>
+          </div>
+          <div class="lc-block accordion-item mb-5">
+            <a
+              editable="inline"
+              class="fw-bold text-decoration-none h4 collapsed"
+              href="#"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Optimise Targets
+            </a>
+
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushMyFAQ1"
+            >
+              <div class="accordion-body" editable="rich">
+                We'll set performance targets that the model should be optimized
+                for and label our KPIs accordingly.
+              </div>
+            </div>
+          </div>
+          <div class="lc-block accordion-item mb-5">
+            <a
+              editable="inline"
+              class="fw-bold text-decoration-none h4 collapsed"
+              href="#"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Train & Deploy
+            </a>
+
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushMyFAQ1"
+              style=""
+            >
+              <div class="accordion-body" editable="rich">
+                Based on static characteristics of the system and on how it
+                behaves now, the remaining useful time can be predicted, which
+                implies that both static and historical data are required and
+                that the degradation process is smooth.
+              </div>
+            </div>
+          </div>
+
+          <!-- -->
+
+          <div class="lc-block accordion-item mb-5">
+            <a
+              editable="inline"
+              class="fw-bold text-decoration-none h4"
+              href="#"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="true"
+              aria-controls="flush-collapseFour"
+            >
+              QuickSight & IoT Integration</a
+            >
+
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse show"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushMyFAQ1"
+              style=""
+            >
+              <div class="accordion-body" editable="rich">
+                Dashboard alerts are rendered, and there's an added upon of
+                integrating streaming data if there are IoT devices in the
+                ecosystem.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} {{ end }} {{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">{{- .Content -}}</div>
+  </div>
+</section>
+
+<div class="py-5">
+  <div class="container text-center py-4 py-md-6">
+    <div
+      class="lc-block card border-0 text-center rounded p-4 p-lg-6"
+      style="
+        background: url(http://cdn.livecanvas.com/media/backgrounds/fffuelco/ffflux.svg)
+          center / cover no-repeat;
+      "
+    >
+      <div class="row card-body mb-3 mb-lg-4">
+        <div class="col-xl-11 col-xxl-9 mx-auto">
+          <div class="lc-block">
+            <div editable="rich">
+              <h3 class="text-white fw-bold display-6">
+                Get in touch <br />
+                Have ideas? Need info?
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-block">
+        <a class="btn btn-primary btn-lg" href="/contact" role="button"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}
